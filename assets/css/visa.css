@@ -1,0 +1,139 @@
+.visapage {
+  font-family: "Inter";
+  display: flex;
+  place-self: center;
+}
+.paymentmtd {
+  color: white;
+  margin-bottom: -15px;
+  padding-top: 10px;
+}
+
+.name {
+  font-family: sans-serif;
+  font-size: 15px;
+  color: #F3F1F1;
+  font-weight: 400;
+  margin-bottom: -20px;
+  margin-left: 2px;
+}
+.nameplaceholder::placeholder {
+  color: #afafaf;
+  font-size: 14px;
+}
+.nameplaceholder {
+  background-color: rgb(41, 40, 40);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  border-width: thin;
+  border-color: rgb(184, 182, 182);
+  border-radius: 6px;
+}
+
+.credit {
+  font-family: sans-serif;
+  font-size: 15px;
+  color: #F3F1F1;
+  font-weight: 400;
+  margin-bottom: -20px;
+  margin-top: 5px;
+  margin-left: 2px;
+}
+.creditplaceholder::placeholder {
+  color: #afafaf;
+  font-size: 14px;
+}
+.creditplaceholder {
+  background-color: rgb(41, 40, 40);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  border-width: thin;
+  border-color: rgb(184, 182, 182);
+  border-radius: 6px;
+}
+
+.expiry {
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #F3F1F1;
+  margin-bottom: -20px;
+  margin-top: 5px;
+  margin-left: 2px;
+}
+
+.expiryplaceholder::placeholder {
+  color: #afafaf;
+  font-size: 14px;
+}
+.expiryplaceholder {
+  background-color: rgb(41, 40, 40);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-width: thin;
+  border-color: rgb(184, 182, 182);
+  border-radius: 6px;
+}
+
+.cvv {
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #F3F1F1;
+  margin-bottom: -20px;
+  margin-top: 5px;
+  margin-left: 2px;
+}
+.cvvplaceholder::placeholder {
+  color: #afafaf;
+  font-size: 14px;
+  border-width: thin;
+  border-color: rgb(184, 182, 182);
+  border-radius: 6px;
+}
+.cvvplaceholder {
+  background-color: rgb(41, 40, 40);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-width: thin;
+  border-color: rgb(184, 182, 182);
+  border-radius: 6px;
+}
+.email {
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #F3F1F1;
+  margin-bottom: -20px;
+  margin-top: 5px;
+  margin-left: 2px;
+}
+.emailplaceholder::placeholder {
+  color: #afafaf;
+  font-size: 14px;
+}
+.emailplaceholder {
+  background-color: rgb(41, 40, 40);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  border-width: thin;
+  border-color: rgb(184, 182, 182);
+  border-radius: 6px;
+}
+
+.discountplaceholder::placeholder {
+  color: #afafaf;
+  font-size: 14px;
+}
+.discountplaceholder {
+  background-color: rgb(41, 40, 40);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  border-width: thin;
+  border-color: rgb(177, 176, 176);
+  border-radius: 6px;
+}
