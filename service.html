@@ -48,6 +48,11 @@
       href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css"
       rel="stylesheet"
     />
+    <!-- Animate On Scroll -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+    />
   </head>
   <body class="">
     <!-- Navbar -->
@@ -127,8 +132,7 @@
             <li>
               <a
                 href="./index.html"
-                class="block py-2 px-3 text-sm md:text-[16px] text-white text-opacity-85 lg:text-white bg-gray-500 rounded lg:bg-transparent lg:p-0"
-                aria-current="page"
+                class="block py-2 px-3 text-sm md:text-[16px] text-gray-900 rounded lg:hover:bg-transparent lg:text-white lg:text-opacity-60 lg:hover:text-white lg:hover:text-opacity-85 lg:p-0"
                 >Home</a
               >
             </li>
@@ -142,7 +146,8 @@
             <li>
               <a
                 href="./service.html"
-                class="block py-2 px-3 text-sm md:text-[16px] text-gray-900 rounded lg:hover:bg-transparent lg:text-white lg:text-opacity-60 lg:hover:text-white lg:hover:text-opacity-85 lg:p-0"
+                class="block py-2 px-3 text-sm md:text-[16px] text-white text-opacity-85 lg:text-white bg-gray-500 rounded lg:bg-transparent lg:p-0"
+                aria-current="page"
                 >Services</a
               >
             </li>
@@ -151,6 +156,13 @@
                 href="./contact.html"
                 class="block py-2 px-3 text-sm md:text-[16px] text-gray-900 rounded lg:hover:bg-transparent lg:text-white lg:text-opacity-60 lg:hover:text-white lg:hover:text-opacity-85 lg:p-0"
                 >Contact</a
+              >
+            </li>
+            <li>
+              <a
+                href="./explore.html"
+                class="block py-2 px-3 text-sm md:hidden md:text-[16px] text-gray-900 rounded lg:hover:bg-transparent lg:text-white lg:text-opacity-60 lg:hover:text-white lg:hover:text-opacity-85 lg:p-0"
+                >Explore Our Dogs</a
               >
             </li>
           </ul>
@@ -175,7 +187,7 @@
       </div>
       <!-- Img bg and containers -->
       <div
-        class="min-w-[288px] lg:flex lg:items-end lg:h-[380px] ls:h-[365px] l:h-[365px] lx:h-[345px] lg:w-[80%] px-3 py-3 md:py-4 lg:py-2 relative mx-4 ms:mx-10 lg:mx-auto rounded-xl bg-cover bg-[50%_30%]"
+        class="min-w-[288px] lg:flex lg:items-center lg:h-[380px] ls:h-[365px] l:h-[365px] lx:h-[345px] lg:w-[80%] px-3 py-3 md:py-4 lg:py-2 relative mx-4 ms:mx-10 lg:mx-auto rounded-xl bg-cover bg-[50%_30%]"
         style="background-image: url('./assets/images/paymentbg.jpg')"
       >
         <!-- overlay -->
@@ -186,7 +198,7 @@
             class="max-w-[636px] lg:max-w-[1040px] list-none text-center mx-auto grid grid-cols-1 lg:grid-cols-3 justify-center gap-2 md:gap-4"
           >
             <li
-              class="bg-black sm:h-[160px] ms:h-auto overflow-y-scroll lg:overflow-y-hidden bg-opacity-60 rounded-lg px-3 py-4 drop-shadow-xl"
+              class="bg-black h-auto bg-opacity-60 rounded-lg px-3 py-4 drop-shadow-xl"
             >
               <center>
                 <p
@@ -209,7 +221,7 @@
               </p>
             </li>
             <li
-              class="bg-black sm:h-[160px] ms:h-auto overflow-y-scroll lg:overflow-y-hidden bg-opacity-60 rounded-lg px-3 py-4 drop-shadow-xl"
+              class="bg-black  h-auto bg-opacity-60 rounded-lg px-3 py-4 drop-shadow-xl"
             >
               <center>
                 <p
@@ -235,7 +247,7 @@
               </p>
             </li>
             <li
-              class="bg-black sm:h-[160px] ms:h-auto overflow-y-scroll lg:overflow-y-hidden bg-opacity-60 rounded-lg px-3 py-4 drop-shadow-xl"
+              class="bg-black h-auto bg-opacity-60 rounded-lg px-3 py-4 drop-shadow-xl"
             >
               <center>
                 <p
@@ -294,6 +306,11 @@
         <!-- 1st testimonial -->
         <div>
           <ul
+            data-aos="fade-up"
+            data-aos-offset="50"
+            data-aos-delay="000"
+            data-aos-duration="300"
+            data-aos-easing="ease-out"
             class="max-w-[500px] mx-auto shadow-md shadow-gray-400 max-list-none text-[13.5px] m:text-[15px] bg-white bg-opacity-65 rounded-xl py-3 px-4"
           >
             <!-- stars -->
@@ -383,6 +400,11 @@
         <!-- 2nd testimonial -->
         <div>
           <ul
+            data-aos="fade-up"
+            data-aos-offset="50"
+            data-aos-delay="100"
+            data-aos-duration="300"
+            data-aos-easing="ease-out"
             class="max-w-[500px] mx-auto shadow-md shadow-gray-400 list-none text-[13.5px] m:text-[15px] bg-white bg-opacity-65 rounded-xl py-3 px-4"
           >
             <!-- stars -->
@@ -457,7 +479,7 @@
             <li class="flex gap-2 items-center">
               <p>
                 <img
-                  src="./assets/images/Angela reed img.jpg"
+                  src="./assets/images/Angela reed img.webp"
                   alt="Angela Reed img"
                   width=""
                   class="w-[60px] md:w-[80px] rounded-full"
@@ -529,7 +551,9 @@
             aria-labelledby="accordion-flush-heading-1"
           >
             <div class="py-5 border-b border-black">
-              <p class="mb-2 text-black text-opacity-65 text-[12px] ms:text-[13px] m:text-[13.5px] md:text-[14.5px]">
+              <p
+                class="mb-2 text-black text-opacity-65 text-[12px] ms:text-[13px] m:text-[13.5px] md:text-[14.5px]"
+              >
                 Our rental process is straightforward: simply contact us to
                 discuss your mission requirements, and we will match you with a
                 suitable canine partner, ensuring all necessary training and
@@ -575,7 +599,9 @@
             aria-labelledby="accordion-flush-heading-2"
           >
             <div class="py-5 border-b border-black">
-              <p class="mb-2 text-black text-opacity-65 text-[12px] ms:text-[13px] m:text-[13.5px] md:text-[14.5px]">
+              <p
+                class="mb-2 text-black text-opacity-65 text-[12px] ms:text-[13px] m:text-[13.5px] md:text-[14.5px]"
+              >
                 We utilize a variety of breeds known for their intelligence,
                 strength, and loyalty, including German Shepherds, Belgian
                 Malinois, Dutch Shepherds, and Labradors.
@@ -620,7 +646,9 @@
             aria-labelledby="accordion-flush-heading-3"
           >
             <div class="py-5 border-b border-black">
-              <p class="mb-2 text-black text-opacity-65 text-[12px] ms:text-[13px] m:text-[13.5px] md:text-[14.5px]">
+              <p
+                class="mb-2 text-black text-opacity-65 text-[12px] ms:text-[13px] m:text-[13.5px] md:text-[14.5px]"
+              >
                 The training process can vary depending on the specific dog and
                 the desired skillset. However, on average, it takes several
                 months of intensive training to prepare a dog for military
@@ -666,7 +694,9 @@
             aria-labelledby="accordion-flush-heading-4"
           >
             <div class="pt-3 pb-1">
-              <p class="mb-2 text-black text-opacity-65 text-[12px] ms:text-[13px] m:text-[13.5px] md:text-[14.5px]">
+              <p
+                class="mb-2 text-black text-opacity-65 text-[12px] ms:text-[13px] m:text-[13.5px] md:text-[14.5px]"
+              >
                 Our dogs are trained by experienced handlers to excel in
                 obedience, protection, and tactical support, making them
                 mission-ready for high-stakes environments. Each dog is equipped
@@ -931,5 +961,16 @@
 
     <!-- flowbite -->
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+    <!-- AOS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <!-- AOS INIT -->
+    <script>
+      AOS.init({
+        duration: 800, // Animation duration in ms
+        offset: 120, // Distance to trigger animation
+        easing: "ease-in-out", // Animation easing
+        once: false, // Whether animation runs only once
+      });
+    </script>
   </body>
 </html>
