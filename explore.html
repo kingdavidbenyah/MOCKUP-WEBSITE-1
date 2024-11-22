@@ -16,7 +16,7 @@
           },
           extend: {
             screens: {
-              ms:"500px",
+              ms: "500px",
               m: "630px",
               ls: "1033px",
               l: "1043px",
@@ -126,8 +126,7 @@
             <li>
               <a
                 href="./index.html"
-                class="block py-2 px-3 text-sm md:text-[16px] text-white text-opacity-85 lg:text-white bg-gray-500 rounded lg:bg-transparent lg:p-0"
-                aria-current="page"
+                class="block py-2 px-3 text-sm md:text-[16px] text-gray-900 rounded lg:hover:bg-transparent lg:text-white lg:text-opacity-60 lg:hover:text-white lg:hover:text-opacity-85 lg:p-0"
                 >Home</a
               >
             </li>
@@ -152,6 +151,14 @@
                 >Contact</a
               >
             </li>
+            <li>
+              <a
+                href="./explore.html"
+                class="block py-2 px-3 md:hidden text-sm md:text-[16px] text-white text-opacity-85 lg:text-white bg-gray-500 rounded lg:bg-transparent lg:p-0"
+                aria-current="page"
+                >Explore Our Dogs</a
+              >
+            </li>
           </ul>
         </div>
       </div>
@@ -161,11 +168,15 @@
     <div class="pt-28 mb-16">
       <!-- Intro -->
       <div class="text-center mb-12">
-        <p class="text-[#010101] mb-1 text-[20px] leading-6 ms:text-[25px] md:text-[30px] font-semibold">
+        <p
+          class="text-[#010101] mb-1 text-[20px] leading-6 ms:text-[25px] md:text-[30px] font-semibold"
+        >
           Meet Our Elite Canine Companions
         </p>
         <div class="w-full flex justify-center">
-          <p class="text-[#6B6B6B] text-[15px] ms:text-[17px] w-[710px] font-normal ms:font-medium">
+          <p
+            class="text-[#6B6B6B] text-[15px] ms:text-[17px] w-[710px] font-normal ms:font-medium"
+          >
             Upgrade your security now
           </p>
         </div>
@@ -235,19 +246,241 @@
       </div>
       <!-- buy button -->
       <p class="flex justify-center">
-        <a href="https://www.paypal.com/us/digital-wallet/send-receive-money/send-money"
-          ><button
-            type="button"
-            class="mt-11 text-black bg-white bg-opacity-80 hover:bg-white hover:bg-opacity-70 focus:outline-none font-semibold rounded-xl text-md px-4 py-2 text-center flex items-center gap-1"
-          >
-            <span>Get Yours</span
-            ><img
-              src="./assets/icon svgs/ArrowRightShort-black.svg"
-              alt="explore icon"
-              width="25px"
-            /></button
-        ></a>
+        <button
+          data-modal-target="static-modal"
+          data-modal-toggle="static-modal"
+          type="button"
+          class="mt-11 text-black bg-white bg-opacity-80 hover:bg-white hover:bg-opacity-70 focus:outline-none font-semibold rounded-xl text-md px-4 py-2 text-center flex items-center gap-1"
+        >
+          <span>Get Yours</span
+          ><img
+            src="./assets/icon svgs/ArrowRightShort-black.svg"
+            alt="explore icon"
+            width="25px"
+          />
+        </button>
       </p>
+      <!-- Main modal -->
+      <div
+        id="static-modal"
+        data-modal-backdrop="static"
+        tabindex="-1"
+        aria-hidden="true"
+        class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0"
+      >
+        <!-- Modal body -->
+        <div
+          class="flex place-self-center bg-black bg-opacity-60 text rounded-xl"
+        >
+          <form class="">
+            <div class="mx-5">
+              <!-- Payment method -->
+              <!-- Modal header -->
+              <div class="flex items-center justify-end p-4 md:p-5 rounded-t">
+                <button
+                  type="button"
+                  class="text-gray-400 bg-transparent rounded-lg text-sm inline-flex justify-center items-center hover:text-white"
+                  data-modal-hide="static-modal"
+                >
+                  <svg
+                    class="w-3 h-3"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 14 14"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"
+                    />
+                  </svg>
+                  <span class="sr-only">Close modal</span>
+                </button>
+              </div>
+              <!-- form title -->
+              <h3 class="text-lg m:text-xl text-center font-medium text-white">
+                Choose your payment method
+              </h3>
+
+              <!-- payment logos -->
+              <div class="flex items-center justify-center gap-5">
+                <div class="flex items-center">
+                  <input type="radio" name="Gender" value="logo" /><img
+                    src="./assets/icon svgs/Visa.svg"
+                    alt="visa logo"
+                    class="w-14"
+                  />
+                </div>
+                <div class="flex items-center">
+                  <input type="radio" name="Gender" value="logo" />
+                  <img
+                    src="./assets/icon svgs/Mastercard.svg"
+                    alt="Mastercard logo"
+                    class="w-14"
+                  />
+                </div>
+                <div class="flex items-center">
+                  <input type="radio" name="Gender" value="logo" />
+                  <img
+                    src="https://www.svgrepo.com/show/382731/pay-pal-paypal-payments-platform.svg"
+                    alt="Paypal logo"
+                    class="w-10"
+                  />
+                </div>
+                <br /><br />
+              </div>
+              <div class="place-self-center space-y-2">
+                <!-- Name -->
+                <div>
+                  <p class="text-[13px] md:text-[15px] text-[#F3F1F1] ml-[2px]">
+                    Cardholder Name
+                  </p>
+                  <input
+                    class="text-[#afafaf] w-full rounded-[6px] border text-[14px]"
+                    style="
+                      background-color: rgb(41, 40, 40);
+                      border-color: rgb(184, 182, 182);
+                    "
+                    type="text"
+                    placeholder="Enter Cardholder name"
+                  />
+                </div>
+
+                <!-- Credit Number -->
+                <div>
+                  <p class="text-[13px] md:text-[15px] text-[#F3F1F1] ml-[2px]">
+                    Cardholder Credit Number
+                  </p>
+                  <input
+                    class="text-[#afafaf] w-full rounded-[6px] border text-[14px]"
+                    style="
+                      background-color: rgb(41, 40, 40);
+                      border-color: rgb(184, 182, 182);
+                    "
+                    type="text"
+                    placeholder="Enter Credit Number"
+                  />
+                </div>
+                <!-- Flex Expiry & CVV -->
+                <div
+                  class="flex flex-col md:flex-row md:items-center w-full space-y-2"
+                >
+                  <!-- Expiry Date -->
+                  <div class="w-full">
+                    <p
+                      class="text-[13px] md:text-[15px] text-[#F3F1F1] ml-[2px]"
+                    >
+                      Expiry date
+                    </p>
+                    <input
+                      class="text-[#afafaf] rounded-[6px] border text-[14px] w-full md:w-auto"
+                      style="
+                        background-color: rgb(41, 40, 40);
+                        border-color: rgb(184, 182, 182);
+                      "
+                      type="date"
+                      placeholder="Enter expiry date"
+                    />
+                  </div>
+                  <!-- CVV number -->
+                  <div class="w-full">
+                    <p
+                      class="text-[13px] md:text-[15px] text-[#F3F1F1] ml-[2px]"
+                    >
+                      Enter CVV Number
+                    </p>
+                    <input
+                      class="text-[#afafaf] rounded-[6px] border text-[14px] w-full md:w-auto"
+                      style="
+                        background-color: rgb(41, 40, 40);
+                        border-color: rgb(184, 182, 182);
+                      "
+                      type="number"
+                      placeholder="CVV Number"
+                    />
+                  </div>
+                </div>
+
+                <!-- Email Address -->
+                <div>
+                  <p class="text-[13px] md:text-[15px] text-[#F3F1F1] ml-[2px]">
+                    Email address
+                  </p>
+                  <input
+                    class="text-[#afafaf] rounded-[6px] w-full border text-[13px] md:text-[14px]"
+                    style="
+                      background-color: rgb(41, 40, 40);
+                      border-color: rgb(184, 182, 182);
+                    "
+                    type="email"
+                    placeholder="Enter your email address"
+                  />
+                </div>
+
+                <!-- Discount & Button -->
+                <div class="grid grid-cols-2">
+                  <!-- Discount Coupon -->
+                  <div>
+                    <input
+                      class="text-[#afafaf] w-[97%] rounded-[6px] border text-[14px]"
+                      style="
+                        background-color: rgb(41, 40, 40);
+                        border-color: rgb(184, 182, 182);
+                      "
+                      type="text"
+                      placeholder="Discount coupon"
+                    />
+                  </div>
+                  <!-- Button -->
+                  <button
+                    style="
+                      border-style: solid;
+                      border-radius: 6.5px;
+                      background-color: black;
+                      color: white;
+                      padding: 10px 50px;
+                      margin-left: 15px;
+                    "
+                  >
+                    Apply
+                  </button>
+                </div>
+              </div>
+
+              <!-- Terms -->
+              <p class="text-white text-sm mt-2">
+                <span><input type="checkbox" /></span>
+                by confirming the order, i
+                <span style="color: orange; text-decoration: underline">
+                  accept the terms of the user</span
+                >
+                agreement
+              </p>
+
+              <!-- Pay button -->
+              <center class="border-t border-gray-900">
+                <button
+                  class="my-2"
+                  data-modal-hide="static-modal"
+                  type="button"
+                  style="
+                    border-style: solid;
+                    border-radius: 6.5px;
+                    background-color: black;
+                    color: white;
+                    padding: 8px 45px;
+                  "
+                >
+                  Pay
+                </button>
+              </center>
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
 
     <!-- FOOTER -->
